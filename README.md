@@ -100,4 +100,4 @@ We are using responsive suffixes preceeded with an \@ to indicate classes that o
 
 For example `.c-block\@sm` would indicate a reusable style that only applies on small screens, and we don't want to be global to that component (particularly useful when there are multiples of a component on a page, and only one needs tweaked at a specific resolution). We can also use `.c-block\@print` to indicate purely print related styles.
 
-please note: the \@ symbol needs to be escaped in css `.prefix-block\@suffix` but not in the html `class="prefix-block\@suffix"`
+please note: the \@ symbol needs to be escaped in css `.prefix-block\@suffix` but not in the html `class="prefix-block@suffix"`
