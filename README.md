@@ -30,7 +30,7 @@ __________________________________
 * __Trumps__ — utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
 
 ### Partials
-Each layer contains a series of partials using the naming convention \_<layer>.<partial>.scss (for example:
+Each layer contains a series of partials using the naming convention \_\<layer\>.\<partial\>.scss (for example:
 \_settings.colors.scss, \_elements.headings.scss, \_components.tabs.scss) and listing the imports for each layer in their respective \_index.scss.
 We use the naming convention along with the folder tree to eliminate any uncertainty, and preclude the potential of an incorrectly located file.
 
