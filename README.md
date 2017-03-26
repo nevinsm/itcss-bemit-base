@@ -58,7 +58,7 @@ This drill-down approach gives us a much more manageable CSS architecture. Now w
 be an addition to whatever has gone before it. We know where each type of rule will live and where to put any new styles,
 and we have the confidence that all our different selectors will play nicely alongside each other.
 
-## Naming Convention (BEMIT)
+# Naming Convention (BEMIT)
 We are using a combination of BEM and the additional information structure of ITCSS to provide a class naming convention
 that enables us to know where it applies in the cascade, and at what screen widths.
 
