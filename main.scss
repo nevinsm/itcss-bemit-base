@@ -1,0 +1,29 @@
+// We are following a pattern called ITCSS (Inverted Triangle CSS). ITCSS's
+// concept is based mainly around layering on styles based on their reach within
+// the DOM. We are also using this in combination with BEM and name spacing.
+
+// Generic, far-reaching, low specificity styles are declared first:
+
+// Settings: Global variables, config switches.
+@import "01-settings/index";
+
+// Tools: Default mixins and functions.
+@import "02-tools/index";
+
+// Generic: Ground-zero styles (Normalize.css, resets, box-sizing).
+@import "03-generic/index";
+
+// Elements: Unclassed HTML elements (type selectors).
+@import "04-elements/index";
+
+// Objects: Cosmetic-free design patterns.
+@import "05-objects/index";
+
+// Components: Designed components, chunks of UI.
+@import "06-components/index";
+
+// Trumps: Utilities and Helper classes with the ability to override everything
+// and anything with an !important or that uses an ID for a selector
+@import "07-trumps/index";
+
+// Explicit, localised, higher specificity styles are declared last.
