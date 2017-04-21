@@ -1,0 +1,38 @@
+///**
+// * ============================================================================
+// * #CORE FUNCTIONS
+// * ============================================================================
+// */
+
+/// Map deep get
+/// @author Hugo Giraudel
+/// @access public
+/// @param {Map} $map - Map
+/// @param {Arglist} $keys - Key chain
+/// @return {*} - Desired value
+@function map-deep-get($map, $keys...) {
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+  @return $map;
+}
+
+// @param {int} $r.
+// @return {int} Square root of $r.
+@function _sqrt($r) {
+  $x0: 1;
+  $x1: $x0;
+
+  @for $i from 1 through 10 {
+    $x1: $x0 - ($x0 * $x0 - abs($r)) / (2 * $x0);
+    $x0: $x1;
+  }
+
+  @return $x1;
+}
+
+// @param {string} $tracking-size from photoshop.
+// @return Letter spacing in em.
+@function _tracking-to-em($tracking-size) {
+  @return #{($tracking-size / 1000)}em;
+}

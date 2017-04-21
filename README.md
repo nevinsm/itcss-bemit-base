@@ -58,6 +58,12 @@ This drill-down approach gives us a much more manageable CSS architecture. Now w
 be an addition to whatever has gone before it. We know where each type of rule will live and where to put any new styles,
 and we have the confidence that all our different selectors will play nicely alongside each other.
 
+### Sass specifics
+We use scss syntax in order to allow newcomers to the codebase to more quickly come to grips with what is happening in any given file, and to allow us to copy paste code snippets from other sources (browser inspector, designers, psd, random google foo, etc.) without the need for major reformatting.
+
+#### Variables and Mixin scoping
+We are keeping global variables in the settings section, and any variables that are specific to a particular element, object, component, or trump should be at the top of that file. Mixins / Functions that are used in more than one location (global) are likewise stored in the tools section, and any mixins / functions that are specific to the particular element, object, component, or trump should be at the top of the file directly following the variables.
+
 # Naming Convention (BEMIT)
 We are using a combination of BEM and the additional information structure of ITCSS to provide a class naming convention
 that enables us to know where it applies in the cascade, and at what screen widths.

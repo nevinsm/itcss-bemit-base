@@ -1,0 +1,16 @@
+///**
+// * ============================================================================
+// * #MAP TOOLS
+// * ============================================================================
+// */
+
+// Get core config values
+//
+// get-config(<key>)
+//
+// Example usage:
+// @if (get-config(debug) == true) { ...  }
+
+@function get-config($key) {
+  @return map-deep-get($core-config, $key);
+}
